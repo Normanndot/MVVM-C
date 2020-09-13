@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="MVVM_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wQF-o5-LXo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyo-uG-TUa">
+                                <rect key="frame" x="183.5" y="438" width="47" height="30"/>
+                                <state key="normal" title="Sign In"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UUp-iU-64t">
+                                <rect key="frame" x="107" y="232" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="oEN-cg-lP2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwi-QH-Pqs">
+                                <rect key="frame" x="107" y="288" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="IFu-CT-TXk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fwi-QH-Pqs" firstAttribute="centerX" secondItem="t9r-RW-Rbx" secondAttribute="centerX" id="1oA-eg-V5i"/>
+                            <constraint firstItem="jyo-uG-TUa" firstAttribute="centerY" secondItem="t9r-RW-Rbx" secondAttribute="centerY" id="8Zb-tC-eLe"/>
+                            <constraint firstItem="UUp-iU-64t" firstAttribute="centerX" secondItem="t9r-RW-Rbx" secondAttribute="centerX" id="M4r-cl-7Ba"/>
+                            <constraint firstItem="jyo-uG-TUa" firstAttribute="centerX" secondItem="t9r-RW-Rbx" secondAttribute="centerX" id="OmY-io-QKz"/>
+                            <constraint firstItem="UUp-iU-64t" firstAttribute="top" secondItem="t9r-RW-Rbx" secondAttribute="top" constant="188" id="V05-VW-6D4"/>
+                            <constraint firstItem="fwi-QH-Pqs" firstAttribute="top" secondItem="UUp-iU-64t" secondAttribute="bottom" constant="22" id="gc5-rI-NCe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t9r-RW-Rbx"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="UUp-iU-64t" id="5BV-9Y-caG"/>
+                        <outlet property="passwordTextField" destination="fwi-QH-Pqs" id="uS9-yN-vkA"/>
+                        <outlet property="signInButton" destination="jyo-uG-TUa" id="cLZ-4U-Xp7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
